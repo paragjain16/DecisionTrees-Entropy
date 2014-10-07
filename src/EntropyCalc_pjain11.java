@@ -62,7 +62,7 @@ public class EntropyCalc_pjain11 {
         while(it.hasNext()){
             Map.Entry<String, Integer> entry = it.next();
             double probability = (double)entry.getValue()/totalEntries;
-            entropy += probability*Math.log(probability)*-1.0;
+            entropy += probability*(Math.log(probability)/Math.log(2))*-1.0;
         }
         return entropy;
     }
