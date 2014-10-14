@@ -63,11 +63,11 @@ public class EntropyCalc_pjain11 {
         Iterator<Map.Entry<String, Integer>> it = distinctEntries.entrySet().iterator();
         while(it.hasNext()){
             Map.Entry<String, Integer> entry = it.next();
-            System.out.println(entry.getKey() + " "+ entry.getValue());
+            //System.out.println(entry.getKey() + " "+ entry.getValue());
             double probability = (double)entry.getValue()/totalEntries;
             entropy += (probability*(Math.log(probability)/Math.log(2))*(-1.0));
         }
-        System.out.println(entropy);
+        //System.out.println(entropy);
         return entropy;
     }
 
